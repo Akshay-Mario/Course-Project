@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\header",
+    "\\src\\app\\receipe",
+    "\\src\\app\\receipe\\receipe-list",
+    "\\src\\app\\receipe\\receipe-list\\receipe-item",
+    "\\src\\app\\shared",
+    "\\src\\app\\shopping",
+    "\\src\\app\\shopping\\shopping-edit"
+  ],
+  "SelectedNode": "\\tsconfig.json",
+  "PreviewInSolutionExplorer": false
+}

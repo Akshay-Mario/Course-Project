@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aashoppin';
+  tabs = 'recipe';
+
+  tabopen(h: string) {
+  
+    this.tabs = h;
+  
+  }
+  
+  
 }
