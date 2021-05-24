@@ -24,5 +24,6 @@ export class ReceipeDetailComponent implements OnInit {
   addtoshop() {
     this.recipe.addtoshop(this.selectedone.ingredient);
   }
-
+  DeleteRecipe() {
+  }
 }
