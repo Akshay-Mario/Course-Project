@@ -1,4 +1,6 @@
 import { Component, Input, OnInit ,  EventEmitter, Output  } from '@angular/core';
+import { Receipe } from '../../receipe.model';
+import { RecipeService } from '../../recipe.service';
 
 
 @Component({
@@ -7,17 +9,23 @@ import { Component, Input, OnInit ,  EventEmitter, Output  } from '@angular/core
   styleUrls: ['./receipe-item.component.css']
 })
 export class ReceipeItemComponent implements OnInit {
-  @Input('singleitem') b: { name: string, description: string, imgpath: string };
-  @Output() clickedrecipe = new EventEmitter<void>();
+  @Input('singleitem') b: Receipe;
+/*  @Output() clickedrecipe = new EventEmitter<void>();*/
+  @Input() index: number;
 
-  constructor() { }
+  constructor(private recipeservice: RecipeService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
+    
+
   }
 
-  recipeclick() {
-    this.clickedrecipe.emit();
-    console.log(this.b.description,this.b.name)
-  }
+  //recipeclick() {
+  //  /*this.clickedrecipe.emit();*/
+  //  console.log(this.b.description, this.b.name)
+  //  this.recipeservice.selrecipe.emit(this.b);
+    
+  //}
 
 }

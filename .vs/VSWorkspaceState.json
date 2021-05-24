@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\header",
     "\\src\\app\\receipe",
+    "\\src\\app\\receipe\\receipe-detail",
     "\\src\\app\\receipe\\receipe-list",
-    "\\src\\app\\receipe\\receipe-list\\receipe-item",
+    "\\src\\app\\receipe\\recipe-start",
+    "\\src\\app\\receipe\\recipeedit",
     "\\src\\app\\shared",
-    "\\src\\app\\shopping",
-    "\\src\\app\\shopping\\shopping-edit"
+    "\\src\\app\\shopping"
   ],
-  "SelectedNode": "\\tsconfig.json",
+  "SelectedNode": "\\src\\app\\shopping\\shopping.component.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -12,7 +12,7 @@ export class AppComponent {
   tabopen(h: string) {
   
     this.tabs = h;
-  
+
   }
   
   

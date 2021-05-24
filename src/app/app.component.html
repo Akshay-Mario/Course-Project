@@ -1,10 +1,11 @@
-<app-header (Selectedtab)="tabopen($event)"></app-header>
+<app-header ></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
    
-      <app-receipe *ngIf="tabs === 'recipe'"></app-receipe>
-      <app-shopping *ngIf="tabs !=='recipe'"></app-shopping>
+      <!--<app-receipe *ngIf="tabs === 'recipe'"></app-receipe>
+      <app-shopping *ngIf="tabs !=='recipe'"></app-shopping>-->
+      <router-outlet></router-outlet>
      
     </div>
   </div>

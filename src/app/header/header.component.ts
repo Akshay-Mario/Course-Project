@@ -8,15 +8,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   collapsed = true;
-  @Output() Selectedtab = new EventEmitter<string>();
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  Onselect(feature: string) {
-    this.Selectedtab.emit(feature);
-  }
+  //Onselect(feature: string) {
+  //  this.Selectedtab.emit(feature);
+  //}
 
 }

@@ -1,22 +1,34 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ShoppingService } from '../shopping.service';
 
 @Component({
   selector: 'app-shopping-edit',
   templateUrl: './shopping-edit.component.html',
   styleUrls: ['./shopping-edit.component.css']
 })
-export class ShoppingEditComponent implements OnInit {
-  @Output() addingitem = new EventEmitter<{ name: string, amount: number }>(); 
+export class ShoppingEditComponent {
+ 
 
   item_name = '';
-  item_amount: number=0;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  item_amount: number = 0;
+  constructor(private shopping: ShoppingService, private router: Router) { }
 
   additem(h: string) {
-    this.addingitem.emit({ name: h, amount: this.item_amount })
-    console.log('submit pressed', this.item_name, this.item_amount, h);
+    if (h == '') {
+      console.log('item name not entered', this.item_name, this.item_amount, h);
+    }
+    else {
+      this.shopping.addnow({ name: h, amount: this.item_amount })
+    }
   }
+
+  Clearlist() {
+    if (confirm('Are you sure you want to clear shopping list')) {
+      this.shopping.clearall();
+      /*this.router.navigate(['/']);*/
+    }
+      
+  }
+
 }
